@@ -1,5 +1,10 @@
+let boton = document.getElementById("btnPrincipal")
+
+boton.addEventListener("click", ingresarDatos)
+
+
 function ingresarDatos(){
-    alert ("Hola! Soy AisOne. ¿Estas preparad@ para subir de nivel tus canciones?");
+    //alert ("Hola! Soy AisOne. ¿Estas preparad@ para subir de nivel tus canciones?");
     let nombre = prompt ("como te gustaria que te llamemos?");
     let localidad = prompt ("¿De donde sos? Queremos saber de donde viene ese talento.");
     let telefono = prompt ("¿quieres darnos tu numero de telefono para que podamos conocernos mejor?");
@@ -14,7 +19,8 @@ function ingresarDatos(){
     alert ("Genial " + nombre + " " + "comencemos a producir ")
 }
 
-/*let Productos = [producto1, producto2, producto3];*/
+let Productos = ["mezcla", "mastering", "instrumental"];
+
 
 class Producto {
     constructor(mezcla, mastering, instrumental) {
@@ -50,6 +56,8 @@ function indumentariaProduccion(){
             return "Salida";
         }
     }
+
+
 function validarPrecio (estilo) {
     if (estilo === "Mezcla") {
         return 1500;
@@ -70,6 +78,7 @@ function validarPrecio (estilo) {
         alert ("La opción seleccionada no es válida")
     }
 }
+
 function cobro (nombre,precio) {
     if (precio !=0){
     alert ("Elegiste el " + nombre + "\nvalor: $" + precio);
@@ -82,6 +91,7 @@ function cobro (nombre,precio) {
     }
     }
 }
+
 ingresarDatos ();
 let menuDatos = indumentariaProduccion ();
 let menuPrecio = validarPrecio (menuDatos);
