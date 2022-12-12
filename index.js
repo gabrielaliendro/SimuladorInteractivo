@@ -4,7 +4,7 @@ boton.addEventListener("click", ingresarDatos)
 
 
 function ingresarDatos(){
-    //alert ("Hola! Soy AisOne. ¿Estas preparad@ para subir de nivel tus canciones?");
+    alert ("Hola! Soy AisOne. ¿Estas preparad@ para subir de nivel tus canciones?");
     let nombre = prompt ("como te gustaria que te llamemos?");
     let localidad = prompt ("¿De donde sos? Queremos saber de donde viene ese talento.");
     let telefono = prompt ("¿quieres darnos tu numero de telefono para que podamos conocernos mejor?");
